@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Learn English - In 30 Days</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #000000, #0f2027);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .book-img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .book-img {
+        max-width: 150px; /* Reduced size for mobile */
+      }
+    }
+    #fish {
+      position: absolute;
+      pointer-events: none;
+      width: 80px;
+      height: 80px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Orange_fish_icon.svg');
+      background-size: cover;
+      transition: transform 0.1s linear;
+    }
+    .btn-buy {
+      background-color: #00c853;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+    .btn-buy:hover {
+      background-color: #00e676;
+      transform: scale(1.05);
+    }
+    .details {
+      margin-top: 50px;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: left;
+    }
+    .details h2 {
+      color: #00e676;
+      margin-bottom: 20px;
+    }
+    .details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .details li::before {
+      content: "✔ ";
+      color: #00c853;
+    }
+  </style>
+</head>
+<body>
+  <div id="fish"></div>
+  <div class="container hero">
+    <h1 class="display-4 mb-4">How to Learn English in 30 Days</h1>
+    <img src="ebookcovere.jpg" alt="Book Cover" class="book-img mb-4" />
+    <p class="lead">An excellent guide prepared to easily teach English to Nepali speakers.</p>
+    <button class="btn btn-buy" onclick="startPayment()">Get the Book - ₹49</button>
+  </div>
+
+  <div class="container details">
+    <h2>Features of the Book:</h2>
+    <ul>
+      <li>63 pages of concise yet impactful information</li>
+      <li>Examples in both Nepali and English</li>
+      <li>English learning from beginner to intermediate level</li>
+      <li>Grammar, vocabulary, conversational phrases, and daily use</li>
+      <li>Ideal for school, college, job, or those going abroad</li>
+      <li>The most useful digital book for online learning</li>
+      <li>Practice questions, speaking exercises, and answers included</li>
+    </ul>
+    <h2>What will you learn from this book?</h2>
+    <ul>
+      <li>Understanding the 8 parts of speech in simple language</li>
+      <li>Correct word usage and translation from Nepali to English</li>
+      <li>Confidence in speaking and understanding English</li>
+      <li>Clear pronunciation and grasp of grammar</li>
+    </ul>
+    <p class="mt-4">This book is in digital PDF format. After purchasing this book, you will master English.
+No one can stop you from learning English now.
+This is your first and easiest step — no more excuses.
+The language of your dreams — now in your hands.</p>
+    <p><strong>Price:</strong> ₹49 only</p>
+    <p><strong>Format:</strong> PDF (Digital)</p>
+    <p><strong>Pages:</strong> 63</p>
+  </div>
+
+  <script>
+    function startPayment() {
+      window.open("https://rzp.io/rzp/cnujADJ", "_blank");
+    }
+
+    const fish = document.getElementById('fish');
+    if (fish) {
+      document.addEventListener('mousemove', (e) => {
+        fish.style.left = e.pageX + 'px';
+        fish.style.top = e.pageY + 'px';
+      });
+    }
+  </script>
+</body>
+</html>
